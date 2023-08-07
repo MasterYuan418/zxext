@@ -1,7 +1,7 @@
 # zxext
 *智学网的补充库*
 
-![](https://img.shields.io/badge/License-ASOUL-red) ![](https://img.shields.io/badge/Python-3.8+-green) ![](https://img.shields.io/pypi/v/zhixue-ext)
+![](https://img.shields.io/badge/License-ASOUL-red) ![](https://img.shields.io/badge/Python-3.8+-green) ![](https://img.shields.io/pypi/v/zxext)
 
 收录了一些智学网库里比较冷门的函数。
 
