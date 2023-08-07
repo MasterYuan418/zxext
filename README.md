@@ -30,7 +30,7 @@
 
 
 
-### 示例
+## 示例
 
 ```python
 from zxext.workbook import Workbook # 导入练习本
@@ -42,3 +42,8 @@ print(wb.search_press("人教"))
 # >> 272
 ```
 
+
+
+## 贡献
+
+建议优先提交给`zhixuewang`库，除非是部分比较不常用的功能。
