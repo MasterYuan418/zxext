@@ -56,3 +56,12 @@ class Knowledge:
     '''是否为子知识'''
     parentKnowledgeId: str
     '''如果是，上一级的知识ID'''
+
+@dataclass
+class TextBookChapter:
+    chapterId: str = None
+    '''教科书章节的编号'''
+    chapterName: str = None
+    '''章节名'''
+    chapterType: str = None 
+    '''本章节的类型，有unit和course'''

@@ -13,7 +13,7 @@
 
 | zhixue-ext版本 | 对应zhixuewang版本 |
 | :------------: | :----------------: |
-|     0.1.0      |       1.1.11       |
+|  0.1.0-0.1.1   |       1.1.11       |
 
 
 
@@ -27,3 +27,18 @@
 
 如果您在使用的过程中遇到任何问题，欢迎前往 [Issue](https://github.com/anwenhu/zhixuewang/issues)提问
 当然也可以加入这个QQ群讨论：862767072（备注：智学网扩展）
+
+
+
+### 示例
+
+```python
+from zxext.workbook import Workbook # 导入练习本
+from zhixuewang import * # 导入核心库
+
+teacher = login("114514", "1919810")
+wb = Workbook(teacher.get_session())
+print(wb.search_press("人教"))
+# >> 272
+```
+

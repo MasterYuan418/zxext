@@ -2,10 +2,16 @@ from typing import List
 from requests import Session
 from zhixuewang.models import (
     Subject,
-    TextBook,
+    TextBook
+)
+from zxext.models import (
+    Question, 
+    QuestionDifficulty, 
+    QuestionKnowledges, 
+    QuestionSection, 
+    Knowledge, 
     TextBookChapter
 )
-from zxext.models import Question, QuestionDifficulty, QuestionKnowledges, QuestionSection, Knowledge
 from zxext.Url import Urls as Url
 
 class Workbook:
