@@ -28,6 +28,8 @@
 如果您在使用的过程中遇到任何问题，欢迎前往 [Issue](https://github.com/anwenhu/zhixuewang/issues)提问
 当然也可以加入这个QQ群讨论：862767072（备注：智学网扩展）
 
+**本库不承诺API不会发生改变，也不承诺更新后原有API任然可用。如果需要稳定性，请使用`zhixuewang`库**
+
 
 
 ## 示例
