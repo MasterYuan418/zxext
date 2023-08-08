@@ -1,6 +1,7 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from enum import Enum
 from typing import List
+from zhixuewang.models import Subject
 
 @dataclass
 class QuestionSection:
@@ -65,3 +66,22 @@ class TextBookChapter:
     '''章节名'''
     chapterType: str = None 
     '''本章节的类型，有unit和course'''
+
+@dataclass
+class TextBook:
+    """教科书属性"""
+    code: str = None
+    """教科书编号"""
+    name: str = None
+    """教科书名称"""
+    version: str = None
+    """教科书版本，如北师大、人教、部编等，等同于pressCode"""
+    versionCode: str = None
+    pressCode: str = versionCode
+    """教科书版本编号"""
+    bindSubject: Subject = None
+    availableChapters: list = field(default_factory=list, repr = False)
+    def __str__(self) -> str:
+        return (
+            f"{self.bindSubject.name} {self.name}（{self.version}）"
+        )
